@@ -394,7 +394,7 @@ module.exports = class Combobox {
       if (activeClass) { Classlist(option).add(activeClass); }
 
       if (this.liveRegion) {
-        this.liveRegion.announce(this.currentOption.innerText);
+        this.liveRegion.announce(this.currentOption.innerText, 500);
       } else {
         this.input.setAttribute('aria-activedescendant', option.id);
       }
