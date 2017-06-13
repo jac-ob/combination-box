@@ -274,7 +274,8 @@ module.exports = class Combobox {
   announceCount() {
     if (this.config.announcement) {
       this.liveRegion.announce(
-        this.config.announcement(this.currentOpts.length)
+        this.config.announcement(this.currentOpts.length),
+        500
       );
     }
 
