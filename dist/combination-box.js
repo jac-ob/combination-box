@@ -357,7 +357,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           key: "announceCount",
           value: function announceCount() {
             if (this.config.announcement) {
-              this.liveRegion.announce(this.config.announcement(this.currentOpts.length));
+              this.liveRegion.announce(this.config.announcement(this.currentOpts.length), 500);
             }
 
             return this;
@@ -492,7 +492,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               }
 
               if (this.liveRegion) {
-                this.liveRegion.announce(this.currentOption.innerText);
+                this.liveRegion.announce(this.currentOption.innerText, 500);
               } else {
                 this.input.setAttribute('aria-activedescendant', option.id);
               }
